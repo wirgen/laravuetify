@@ -1,0 +1,63 @@
+{
+  "name": "laravuetify",
+  "version": "1.1.0",
+  "build": "20200715170441",
+  "description": "Beautiful dashboard for Laravel built by VueJS.",
+  "author": {
+    "name": "Denis Nikiforov",
+    "email": "my.wirgen@gmail.com",
+    "url": "https://wirgen.by"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "report": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --report --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "eslint --ext .js,.vue resources/js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "resources/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.19",
+    "js-cookie": "^2.2.1",
+    "vue": "^2.5.17",
+    "vue-router": "^3.3.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0",
+    "eslint": "^7.4.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-vue": "^7.0.0-alpha.9",
+    "fibers": "^5.0.0",
+    "husky": "^4.2.5",
+    "laravel-mix": "^5.0.1",
+    "laravel-mix-eslint": "^0.1.3",
+    "lint-staged": "^10.2.11",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.20.1",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.8.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%"
+  ]
+}
