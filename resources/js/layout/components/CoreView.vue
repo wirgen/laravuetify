@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <v-main class="grey lighten-3">
     <router-view />
 
     <core-footer />
-  </div>
+  </v-main>
 </template>
 
 <script>

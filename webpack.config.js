@@ -1,5 +1,6 @@
 const path = require('path')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 function resolve (dir) {
   return path.resolve(
@@ -12,6 +13,7 @@ function resolve (dir) {
 const rawArgv = process.argv.slice(2)
 const report = rawArgv.includes('--report')
 let plugins = []
+plugins.push(new VuetifyLoaderPlugin())
 if (report) {
   plugins.push(new BundleAnalyzerPlugin({
     openAnalyzer: true,

@@ -2,23 +2,26 @@
 
 <p>
   <a href="https://laravel.com">
-    <img src="https://img.shields.io/badge/laravel-6.18-brightgreen.svg" alt="vue">
+    <img src="https://img.shields.io/badge/laravel-6.18-brightgreen.svg" alt="laravel">
   </a>
   <a href="https://vuejs.org">
     <img src="https://img.shields.io/badge/vue-2.6.11-brightgreen.svg" alt="vue">
   </a>
+  <a href="https://vuetifyjs.com">
+      <img src="https://img.shields.io/badge/vuetifyjs-2.3.4-brightgreen.svg" alt="vuetify">
+    </a>
   <a href="https://github.com/wirgen/laravuetify/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="license">
   </a>
 </p>
 
-Simple clean SPA without CSS frameworks and other libraries.
-This repository can use as start-point for adapt any CSS/Vue framework.
+A Simple SPA based on Laravel and VueJS with VuetifyJS.
 
 ## Info
 
 - Backend: [Laravel 6](https://laravel.com/docs/6.x/releases)
 - Frontend: [VueJS 2](https://vuejs.org/v2/guide/)
+- Framework: [VuetifyJS 2](https://vuetifyjs.com/getting-started/quick-start/)
 
 ## Prerequiries
 

@@ -1,5 +1,12 @@
 <template>
-  <div>{{ $route.meta.title }}</div>
+  <v-container
+    id="simple"
+    class="px-6"
+    fluid
+    tag="section"
+  >
+    {{ $route.meta.title }}
+  </v-container>
 </template>
 
 <script>

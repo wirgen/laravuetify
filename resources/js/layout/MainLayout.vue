@@ -1,11 +1,14 @@
 <template>
-  <div>
-    <core-app-bar />
+  <v-app>
+    <core-app-bar
+      :drawer="drawer"
+      @update-drawer="setDrawer"
+    />
 
-    <core-drawer />
+    <core-drawer :drawer="drawer" />
 
     <core-view />
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -15,7 +18,17 @@
 
   export default {
     name: 'MainLayout',
-    components: { CoreAppBar, CoreDrawer, CoreView }
+    components: { CoreAppBar, CoreDrawer, CoreView },
+    data () {
+      return {
+        drawer: true,
+      }
+    },
+    methods: {
+      setDrawer (drawer) {
+        this.drawer = drawer
+      }
+    }
   }
 </script>
 
