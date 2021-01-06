@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@mdi/js": "^5.3.45",
-    "axios": "^0.19",
+    "axios": "^0.21",
     "js-cookie": "^2.2.1",
     "vue": "^2.5.17",
     "vue-router": "^3.3.4",
